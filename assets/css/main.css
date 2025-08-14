@@ -4870,13 +4870,6 @@ input, select, textarea {
     background-color: #f1f1f1; /* Resalta la fila al pasar el ratón */
 }
 
-.team-name-cell {
-    display: flex;
-    align-items: center;
-    text-align: left !important;
-    font-weight: 600;
-}
-
 .team-logo-table {
     width: 25px;
     height: 25px;
