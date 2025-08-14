@@ -4871,9 +4871,8 @@ input, select, textarea {
 }
 
 .team-logo-table {
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+    width: 40px;  /* Aumentado de 25px */
+    height: 40px; /* Aumentado de 25px */
 }
 
 .points {
