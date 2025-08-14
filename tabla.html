@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="es"></html>
+	<head>
+		<title>Santa Rosa de Huallyata</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<span class="logo">POSICIONES</span>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="equipos.html">Equipos</a></li>
+							<li><a href="partidos.html">Partidos</a></li>
+							<li class="active"><a href="tabla.html">Posiciones</a></li>
+							<li><a href="reglamento.html">Reglamento</a></li>
+							<li><a href="apoyo.html">Apoyo</a></li>
+							<li><a href="ediciones.html">Ediciones Anteriores</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://x.com/JuliCesarFFF" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/Julio.Cesar.F.F.Fantacy" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/julio_dyj_foreve/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/Julio280402" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+                        <section class="post">
+                            <header class="major">
+                                <h1>Partidos y Resultados</h1>
+                                <p>Sigue toda la emoción del campeonato, fecha a fecha.</p>
+                            </header>
+
+                            <h2>Próximos Partidos</h2>
+                            <hr>
+
+							<!-- Inicio codigo para mostrar proccimos partidos -->
+
+                            <div class="match-card">
+								<div class="team">
+									<img src="images/prueba_de_insignia.png" alt="Logo Equipo A" class="logo">
+									<span class="team-name">Nombre Equipo A</span>
+								</div>
+								<div class="match-center-details">
+									<span class="cancha-info">Cancha 1</span>
+								</div>
+								<div class="team">
+									<img src="images/prueba_de_insignia.png" alt="Logo Equipo B" class="logo">
+									<span class="team-name">Nombre Equipo B</span>
+								</div>
+							</div>
+							
+							<!-- Inicio codigo para mostrar proccimos partidos -->
+
+							<h2 style="margin-top: 5em;">Resultados</h2>
+							<hr>
+
+							<!-- Inicio codigo para mostrar resultados de los partidos -->
+
+                            <div class="match-card">
+								<div class="team">
+									<img src="images/prueba_de_insignia.png" alt="Logo Equipo C" class="logo">
+									<span class="team-name">Nombre Equipo C</span>
+									<div class="goal-scorers">
+										<small>15' Nombre Goleador 1</small>
+										<small>48' Nombre Goleador 2</small>
+									</div>
+								</div>
+								<div class="match-center-details">
+									<span class="match-score">2 - 1</span>
+								</div>
+								<div class="team">
+									<img src="images/prueba_de_insignia.png" alt="Logo Equipo D" class="logo">
+									<span class="team-name">Nombre Equipo D</span>
+									<div class="goal-scorers">
+										<small>75' Nombre Goleador 3</small>
+									</div>
+								</div>
+							</div>
+
+							<!-- Fin del codigo para mostrar resultados de los partidos -->
+
+							
+						
+						</section>
+					</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<script>
+    // Este código busca todos los logos de los equipos
+    const teamLogos = document.querySelectorAll('.team-logo');
+
+    // Añade un "escuchador" de clics a cada logo
+    teamLogos.forEach(logo => {
+        logo.addEventListener('click', () => {
+            // Busca la lista de jugadores que corresponde a ESE equipo
+            const playerList = logo.closest('.team-card').querySelector('.player-list');
+            
+            // Alterna la clase 'visible' para mostrar u ocultar la lista
+            playerList.classList.toggle('visible');
+        });
+    });
+</script>
+		
+	</body>
+</html>
