@@ -4764,3 +4764,71 @@ input, select, textarea {
     object-fit: cover; /* Asegura que la foto no se deforme */
     margin-left: 20px;
 }
+
+
+/* --- Estilos para las Tarjetas de Partido (Estilo Google) --- */
+
+.match-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los items al inicio (arriba) */
+    background: #f8f9fa;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.team {
+    display: flex;
+    flex-direction: column; /* Pone el nombre debajo del logo */
+    align-items: center; /* Centra el logo y el nombre */
+    width: 35%;
+    text-align: center;
+}
+
+.team .logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain; /* Para que los logos no se deformen */
+}
+
+.team .team-name {
+    font-weight: 600;
+    font-size: 1em;
+    margin-top: 0.5em;
+    display: block;
+}
+
+.match-center-details {
+    width: 20%;
+    text-align: center;
+    align-self: center; /* Centra este bloque verticalmente */
+}
+
+.match-score {
+    font-size: 2.2em;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+.cancha-info {
+    font-size: 0.9em;
+    color: #5f6368;
+    background-color: #e8eaed;
+    padding: 0.2em 0.6em;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 5px; /* Empuja la cancha un poco hacia abajo */
+}
+
+.goal-scorers {
+    margin-top: 0.75em;
+}
+
+.goal-scorers small {
+    display: block; /* Pone cada goleador en una nueva línea */
+    font-size: 0.8em;
+    color: #5f6368;
+    line-height: 1.4;
+}
