@@ -4832,3 +4832,58 @@ input, select, textarea {
     color: #5f6368;
     line-height: 1.4;
 }
+
+
+
+/* --- Estilos para la Tabla de Posiciones --- */
+
+.table-wrapper {
+    overflow-x: auto; /* Permite deslizar horizontalmente en móviles */
+    -webkit-overflow-scrolling: touch;
+}
+
+.standings-table {
+    width: 100%;
+    border-collapse: collapse; /* Une los bordes de las celdas */
+    margin: 2em 0;
+    font-size: 0.9em;
+}
+
+.standings-table th, .standings-table td {
+    padding: 0.75em;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.standings-table thead th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.standings-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Efecto "cebra" para mejor lectura */
+}
+
+.standings-table tbody tr:hover {
+    background-color: #f1f1f1; /* Resalta la fila al pasar el ratón */
+}
+
+.team-name-cell {
+    display: flex;
+    align-items: center;
+    text-align: left !important;
+    font-weight: 600;
+}
+
+.team-logo-table {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.points {
+    font-weight: bold;
+    font-size: 1.2em;
+}
