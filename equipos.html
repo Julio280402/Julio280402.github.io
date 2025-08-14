@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>EQUIPOSSS</title>
+		<title>Santa Rosa de Huallyata</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -50,26 +50,31 @@
 									<h1>Equipos Participantes</h1>
 									<p>Conoce a los valientes equipos que competirán por la gloria en esta edición del campeonato.</p>
 								</header>
-								<hr /> <h2>Aquí pones el Nombre del Equipo 1</h2>
-								<div class="image main"><img src="images/foto_equipo1.jpg" alt="Foto del Equipo 1" /></div>
-								<h4>Jugadores:</h4>
-								<ul>
-									<li>Juan Pérez (Capitán)</li>
-									<li>Miguel García (Portero)</li>
-									<li>Carlos Rodríguez</li>
-									<li>Luis Martínez</li>
-								</ul>
-								<hr />
-								<h2>Nombre del Equipo 2</h2>
-								<div class="image main"><img src="images/foto_equipo2.jpg" alt="Foto del Equipo 2" /></div>
-								<h4>Jugadores:</h4>
-								<ul>
-									<li>Pedro Gómez</li>
-                                    <li>Andrés López</li>
-								</ul>
-							</section>
-
-					</div>
+								
+								<div class="team-card">
+							    <div class="team-header">
+									<img src="images/logo_equipo1.png" alt="Logo del Equipo" class="team-logo">
+									<h3 class="team-name">Nombre del Equipo 1</h3>
+								</div>
+								<div class="player-list">
+								    <div class="player-row">
+										<span class="player-number">10</span>
+										<div class="player-info">
+											<span class="player-name">Nombre del Jugador Estrella</span>
+											<small class="player-description">Posición: Delantero (Capitán)</small>
+										</div>
+										<img src="images/foto_jugador1.jpg" alt="Foto del Jugador" class="player-photo">
+									</div>
+									<div class="player-row">
+										<span class="player-number">1</span>
+										<div class="player-info">
+											<span class="player-name">Nombre del Portero</span>
+											<small class="player-description">Posición: Portero</small>
+										</div>
+										<img src="images/foto_jugador2.jpg" alt="Foto del Jugador" class="player-photo">
+									</div>
+									</div>
+								</div>
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -136,5 +141,21 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+		<script>
+    // Este código busca todos los logos de los equipos
+    const teamLogos = document.querySelectorAll('.team-logo');
+
+    // Añade un "escuchador" de clics a cada logo
+    teamLogos.forEach(logo => {
+        logo.addEventListener('click', () => {
+            // Busca la lista de jugadores que corresponde a ESE equipo
+            const playerList = logo.closest('.team-card').querySelector('.player-list');
+            
+            // Alterna la clase 'visible' para mostrar u ocultar la lista
+            playerList.classList.toggle('visible');
+        });
+    });
+</script>
+		
 	</body>
 </html>

@@ -4687,3 +4687,80 @@ input, select, textarea {
 		}
 
 	}
+
+/* --- Estilos para las Tarjetas de Equipo --- */
+
+.team-card {
+    background-color: #f4f4f4; /* Un color de fondo gris claro para la tarjeta */
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px;
+    margin-bottom: 30px; /* Espacio entre tarjetas de equipo */
+    text-align: center; /* Centra el logo y el nombre */
+}
+
+.team-header .team-logo {
+    max-width: 100px; /* Tamaño máximo del logo */
+    height: auto;
+    margin-bottom: 10px;
+    cursor: pointer; /* Hace que el cursor sea una manito al pasar por el logo */
+    transition: transform 0.2s; /* Pequeña animación al pasar el ratón */
+}
+
+.team-header .team-logo:hover {
+    transform: scale(1.1); /* Agranda un poco el logo al pasar el ratón */
+}
+
+.team-name {
+    margin-top: 0;
+}
+
+/* --- Estilos para la Lista de Jugadores --- */
+
+.player-list {
+    display: none; /* Por defecto, la lista está OCULTA */
+    margin-top: 20px;
+    text-align: left; /* Alinea el texto de la lista a la izquierda */
+}
+
+/* Esta clase se añadirá con JavaScript para MOSTRAR la lista */
+.player-list.visible {
+    display: block;
+}
+
+.player-row {
+    display: flex; /* ¡La magia de Flexbox para alinear todo! */
+    justify-content: space-between; /* Empuja la foto a la derecha */
+    align-items: center; /* Centra todo verticalmente */
+    padding: 10px 0;
+    border-top: 1px solid #eee; /* Línea separadora entre jugadores */
+}
+
+.player-number {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #888;
+    margin-right: 20px;
+}
+
+.player-info {
+    flex-grow: 1; /* Permite que este bloque ocupe el espacio sobrante */
+}
+
+.player-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block; /* Hace que la descripción se ponga debajo */
+}
+
+.player-description {
+    color: #666;
+}
+
+.player-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Hace la foto redonda */
+    object-fit: cover; /* Asegura que la foto no se deforme */
+    margin-left: 20px;
+}
