@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="es"></html>
+	<head>
+		<title>Santa Rosa de Huallyata</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<span class="logo">RECUERDOS</span>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="equipos.html">Equipos</a></li>
+							<li><a href="partidos.html">Partidos</a></li>
+							<li><a href="tabla.html">Posiciones</a></li>
+							<li><a href="reglamento.html">Reglamento</a></li>
+							<li><a href="apoyo.html">Apoyo</a></li>
+							<li class="active"><a href="ediciones.html">Ediciones Anteriores</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://x.com/JuliCesarFFF" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/Julio.Cesar.F.F.Fantacy" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/julio_dyj_foreve/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://github.com/Julio280402" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main de la Contenido de la pagina Ediciones-->
+					<div id="main">
+						<section class="post">
+							<header class="major">
+								<h1>Apoya Nuestro Campeonato</h1>
+								<p>Tu contribución es fundamental para el éxito de nuestro evento. <br>Puedes apoyarnos a través de los siguientes medios de pago. ¡Gracias!</p>
+							</header>
+							
+							<div class="donations-container">
+								
+								<div class="donation-card">
+									<img src="images/logo_yape.png" alt="Logo Yape" class="platform-logo">
+									<img src="images/mi_yape.png" alt="Código QR de Yape" class="qr-code-img">
+									<p class="donation-link">Yapea al 928372306</p>
+								</div>
+								<div class="donation-card">
+									<img src="images/logo_plin.png" alt="Logo Plin" class="platform-logo">
+									<img src="images/plin_qr.png" alt="Código QR de Plin" class="qr-code-img">
+									<p class="donation-link">Yapea al 987654321</p>
+								</div>
+								
+								<div class="donation-card">
+									<img src="images/logo_bcp.png" alt="Logo BCP" class="platform-logo">
+									<img src="images/bcp_qr.png" alt="Código QR de BCP" class="qr-code-img">
+									<p class="donation-link">N° Cta: 123-4567890-1-23</p>
+								</div>
+							</div>
+						</section>
+					</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+		<script>
+		const tabButtons = document.querySelectorAll('.tab-button');
+		const tabPanes = document.querySelectorAll('.tab-pane');
+		
+		tabButtons.forEach(button => {
+			button.addEventListener('click', () => {
+            // Obtiene el objetivo del botón clickeado
+            const target = document.querySelector(button.dataset.tabTarget);
+
+            // Quita la clase 'active' de todos los botones y contenidos
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabPanes.forEach(pane => pane.classList.remove('active'));
+
+            // Añade la clase 'active' solo al botón clickeado y a su contenido
+            button.classList.add('active');
+            target.classList.add('active');
+        });
+    });
+</script>
+</script>
+		
+	</body>
+</html>
