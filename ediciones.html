@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.css" />
 	</head>
 	<body class="is-preload">
 
@@ -45,28 +46,50 @@
 					<div id="main">
 						<section class="post">
 							<header class="major">
-								<h1>Apoya Nuestro Campeonato</h1>
-								<p>Tu contribución es fundamental para el éxito de nuestro evento. <br>Puedes apoyarnos a través de los siguientes medios de pago. ¡Gracias!</p>
+								<h1>Salón de los Campeones</h1>
+								<p>Un homenaje a los equipos que alcanzaron la gloria en cada edición de nuestro campeonato.</p>
 							</header>
 							
-							<div class="donations-container">
-								
-								<div class="donation-card">
-									<img src="images/logo_yape.png" alt="Logo Yape" class="platform-logo">
-									<img src="images/mi_yape.png" alt="Código QR de Yape" class="qr-code-img">
-									<p class="donation-link">Yapea al 928372306</p>
+							<div class="champions-gallery">
+								<div class="champion-card">
+									<h3>Campeonato 2024</h3>
+									<div class="gallery-container">
+										<a href="https://drive.google.com/uc?id=11kw1PKPuxFfdwsER6L4CDk9VD8uK38ne">
+											<img src="https://drive.google.com/uc?id=11kw1PKPuxFfdwsER6L4CDk9VD8uK38ne" alt="Campeón 2024"></a>
+										<a href="https://drive.google.com/uc?id=18Q-HIKTdpdBOhqYTQZ3KnronQtPel77n" style="display:none;"></a>
+										<a href="https://drive.google.com/uc?id=1OMGfRtPbOw9W_ORfaY3xKTQP4xmqgklR" style="display:none;"></a>
+										<a href="https://drive.google.com/uc?id=1v2xh89wqUzX8aoOKTjgBK7LcogrDPEfz" style="display:none;"></a>
+										<a href="https://drive.google.com/uc?id=1_MMgZNK85W55gbSbLIV8UCp9UliupE9V" style="display:none;"></a>
+									</div>
+									<h4 class="champion-name">Nombre del Equipo Campeón</h4>
 								</div>
-								<div class="donation-card">
-									<img src="images/logo_plin.png" alt="Logo Plin" class="platform-logo">
-									<img src="images/plin_qr.png" alt="Código QR de Plin" class="qr-code-img">
-									<p class="donation-link">Yapea al 987654321</p>
+								<div class="champion-card">
+									<h3>Campeonato 2023</h3>
+									<div class="gallery-container">
+										<a href="images/campeon_2023_grande.jpg"><img src="images/campeon_2023_thumb.jpg" alt="Campeón 2023"></a>
+										<a href="images/foto1_2023.jpg" style="display:none;"></a>
+										<a href="images/foto2_2023.jpg" style="display:none;"></a>
+									</div>
+									<h4 class="champion-name">Nombre Equipo Campeón 2023</h4>
 								</div>
-								
-								<div class="donation-card">
-									<img src="images/logo_bcp.png" alt="Logo BCP" class="platform-logo">
-									<img src="images/bcp_qr.png" alt="Código QR de BCP" class="qr-code-img">
-									<p class="donation-link">N° Cta: 123-4567890-1-23</p>
-								</div>
+							</div>
+							
+							
+							<hr style="margin: 4em 0;">
+							<header class="major">
+								<h2>Recuerdos</h2>
+								<p>Revive los mejores momentos de nuestros campeonatos pasados. Haz clic en una imagen para ver la galería completa en Google Drive.</p>
+							</header>
+							
+							<div class="memories-gallery">
+								<a href="URL_DE_TU_CARPETA_EN_GOOGLE_DRIVE" target="_blank" class="memory-card">
+									<img src="images/recuerdo_2024.jpg" alt="Recuerdos del 2024">
+									<h4>Recuerdos 2024</h4>
+								</a>
+								<a href="OTRA_URL_DE_GOOGLE_DRIVE" target="_blank" class="memory-card">
+									<img src="images/recuerdo_2023.jpg" alt="Recuerdos del 2023">
+									<h4>Recuerdos 2023</h4>
+								</a>
 							</div>
 						</section>
 					</div>
@@ -101,5 +124,10 @@
 </script>
 </script>
 		
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.js"></script>
+<script>
+    var lightbox = new SimpleLightbox('.gallery-container a');
+</script>
+
 	</body>
 </html>
