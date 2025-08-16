@@ -4882,6 +4882,7 @@ input, select, textarea {
 }
 
 
+
 /* --- Estilos para el Sistema de Pestañas (Tabs) --- */
 .tabs-container {
     margin: 2em 0;
@@ -4932,4 +4933,49 @@ input, select, textarea {
 /* Estilo para el contenido que está ACTIVO */
 .tab-pane.active {
     display: block; /* Muestra solo el contenido de la pestaña activa */
+}
+
+
+
+/* --- Estilos para las Tarjetas de Donación de la Pagina Apoyo --- */
+
+.donations-container {
+    display: flex; /* La clave para poner las tarjetas una al lado de la otra */
+    justify-content: center; /* Centra las tarjetas en la página */
+    flex-wrap: wrap; /* Permite que las tarjetas bajen a la siguiente línea en pantallas pequeñas */
+    gap: 2em; /* Espacio entre las tarjetas */
+    margin-top: 3em;
+}
+
+.donation-card {
+    display: flex;
+    flex-direction: column; /* Pone los elementos uno debajo del otro */
+    align-items: center; /* Centra todo horizontalmente dentro de la tarjeta */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2em;
+    width: 280px; /* Ancho fijo para cada tarjeta */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.platform-logo {
+    height: 40px; /* Altura fija para el logo de la plataforma */
+    max-width: 120px;
+    margin-bottom: 1.5em;
+    object-fit: contain;
+}
+
+.qr-code-img {
+    max-width: 100%;
+    border: 1px solid #eee;
+    margin-bottom: 1.5em;
+}
+
+.donation-link {
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #2e8b57; /* Un subrayado verde de ejemplo */
+    color: #333;
+    padding-bottom: 3px;
 }
