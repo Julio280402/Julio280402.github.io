@@ -4880,3 +4880,56 @@ input, select, textarea {
     font-weight: bold;
     font-size: 1.2em;
 }
+
+
+/* --- Estilos para el Sistema de Pestañas (Tabs) --- */
+.tabs-container {
+    margin: 2em 0;
+}
+
+.tab-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los botones pasen a la siguiente línea en móviles */
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    border-bottom: 2px solid #ddd;
+}
+
+.tab-button {
+    padding: 1em 1.5em;
+    cursor: pointer;
+    font-weight: 600;
+    color: #777;
+    border: none;
+    background: none;
+    border-bottom: 2px solid transparent; /* Borde invisible por defecto */
+    transition: all 0.2s ease-in-out;
+}
+
+.tab-button:hover {
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Estilo para la pestaña que está ACTIVA */
+.tab-button.active {
+    color: #2e8b57; /* Un color verde para la pestaña activa */
+    border-bottom: 2px solid #2e8b57;
+}
+
+.tab-content {
+    padding: 2em 1em;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.tab-pane {
+    display: none; /* Todas las pestañas de contenido están ocultas por defecto */
+}
+
+/* Estilo para el contenido que está ACTIVO */
+.tab-pane.active {
+    display: block; /* Muestra solo el contenido de la pestaña activa */
+}
