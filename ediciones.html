@@ -84,13 +84,21 @@
 
             <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.js"></script>
             <script>
-			    // 1. Activa la galería Lightbox (esto se queda igual)
-                var lightbox = new SimpleLightbox('.gallery-container a');
-				// 2. Activa el acordeón para desplegar (NUEVA VERSIÓN CON JQUERY)
-                $('.accordion-trigger').on('click', function() {
-                    $(this).closest('.champion-item').find('.champion-gallery-content').slideToggle('fast');
-                });
-				</script>
+			    // Espera a que toda la página esté completamente cargada
+			    $(document).ready(function() {
+				// 1. Activa la galería Lightbox
+				// // Le añadimos unas opciones para que se vea mejor
+				   new SimpleLightbox('.gallery-container a', {
+					navText: ['&lsaquo;','&rsaquo;'],
+					closeText: '&times;',
+					animationSpeed: 250
+				});
+				// 2. Activa el acordeón para desplegar
+				   $('.accordion-trigger').on('click', function() {
+					$(this).closest('.champion-item').find('.champion-gallery-content').slideToggle('fast');
+				});
+				});
+			</script>
         </div>
     </body>
 </html>
