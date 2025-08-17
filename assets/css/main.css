@@ -5023,10 +5023,6 @@ input, select, textarea {
     border-top: 1px solid #ddd;
 }
 
-.champion-gallery-content.visible {
-    display: block; /* La clase 'visible' lo muestra */
-}
-
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
