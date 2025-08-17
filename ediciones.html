@@ -17,11 +17,9 @@
     <body class="is-preload">
 
         <div id="wrapper">
-
             <header id="header">
                 <span class="logo">RECUERDOS</span>
             </header>
-
             <nav id="nav">
                 <ul class="links">
                     <li><a href="index.html">Inicio</a></li>
@@ -42,6 +40,7 @@
                         <h1>Salón de los Campeones</h1>
                         <p>Haz clic en la foto principal de cada campeón para desplegar su galería de recuerdos.</p>
                     </header>
+
                     <div class="champions-accordion">
                         <div class="champion-item">
                             <div class="champion-header">
@@ -53,11 +52,14 @@
                                 <div class="gallery-container">
                                     <a href="images/campeones/campeon_2020.jpg"><img src="images/campeones/campeon_2020.jpg" alt=""></a>
                                     <a href="images/campeones/campeon_2021.jpg"><img src="images/campeones/campeon_2021.jpg" alt=""></a>
+                                    <a href="images/campeones/campeon_2022.jpg"><img src="images/campeones/campeon_2022.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                     <hr style="margin: 4em 0;">
+
                     <header class="major">
                         <h2>Recuerdos por Año</h2>
                         <p>Revive los mejores momentos. Haz clic en una imagen para ver la galería completa en Google Drive.</p>
@@ -74,7 +76,6 @@
             <div id="copyright">
                 <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
             </div>
-
         </div>
 
         <script src="assets/js/jquery.min.js"></script>
@@ -84,16 +85,19 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-
         <script src="assets/js/simple-lightbox.min.js"></script>
+
         <script>
             $(document).ready(function() {
-                // Activa la galería Lightbox
+    
+                // 1. Activa la galería Lightbox
                 new SimpleLightbox('.gallery-container a');
-                // Activa el acordeón para desplegar
+        
+                // 2. Activa el acordeón para desplegar
                 $('.accordion-trigger').on('click', function() {
                     $(this).closest('.champion-item').find('.champion-gallery-content').slideToggle('fast');
                 });
+        
             });
         </script>
     </body>
