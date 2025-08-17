@@ -4979,3 +4979,68 @@ input, select, textarea {
     color: #333;
     padding-bottom: 3px;
 }
+
+
+
+/* --- Nuevos Estilos para Salón de Campeones (Acordeón) --- */
+
+.champion-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 2em;
+    overflow: hidden; /* Importante para los bordes redondeados */
+}
+
+.champion-header {
+    padding: 1.5em;
+    text-align: center;
+}
+
+.accordion-trigger {
+    max-width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+    border: 1px solid #eee;
+}
+
+.accordion-trigger:hover {
+    opacity: 0.85;
+}
+
+.champion-header h3 {
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+}
+
+.champion-name {
+    margin: 0;
+}
+
+.champion-gallery-content {
+    display: none; /* Contenido oculto por defecto */
+    padding: 0 1.5em 1.5em 1.5em;
+    border-top: 1px solid #ddd;
+}
+
+.champion-gallery-content.visible {
+    display: block; /* La clase 'visible' lo muestra */
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.gallery-container a {
+    flex: 1 1 150px; /* Flexbox para que las imágenes se ajusten */
+    border: none;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+}
