@@ -15,10 +15,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.css" />
     </head>
     <body class="is-preload">
+
         <div id="wrapper">
+
             <header id="header">
                 <span class="logo">RECUERDOS</span>
             </header>
+
             <nav id="nav">
                 <ul class="links">
                     <li><a href="index.html">Inicio</a></li>
@@ -43,7 +46,7 @@
                     <div class="champions-accordion">
                         <div class="champion-item">
                             <div class="champion-header">
-                                <img src="images/campeones/campeon_2020.jpg" alt="Foto Principal del Campeón 2024" class="accordion-trigger">
+                                <img src="images/campeones/campeon_2020.jpg" alt="Foto Principal del Campeón" class="accordion-trigger">
                                 <h3>Campeonato 2024</h3>
                                 <h4 class="champion-name">Nombre del Equipo Campeón</h4>
                             </div>
@@ -73,32 +76,29 @@
                     </div>
                 </section>
             </div>
+            
+            <div id="copyright">
+                <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+            </div>
 
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/jquery.scrolly.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
+        </div> <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.js"></script>
-            <script>
-			    // Espera a que toda la página esté completamente cargada
-			    $(document).ready(function() {
-				// 1. Activa la galería Lightbox
-				// // Le añadimos unas opciones para que se vea mejor
-				   new SimpleLightbox('.gallery-container a', {
-					navText: ['&lsaquo;','&rsaquo;'],
-					closeText: '&times;',
-					animationSpeed: 250
-				});
-				// 2. Activa el acordeón para desplegar
-				   $('.accordion-trigger').on('click', function() {
-					$(this).closest('.champion-item').find('.champion-gallery-content').slideToggle('fast');
-				});
-				});
-			</script>
-        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-lightbox/2.14.2/simple-lightbox.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // Activa la galería Lightbox
+                new SimpleLightbox('.gallery-container a');
+                // Activa el acordeón para desplegar
+                $('.accordion-trigger').on('click', function() {
+                    $(this).closest('.champion-item').find('.champion-gallery-content').slideToggle('fast');
+                });
+            });
+        </script>
     </body>
 </html>
