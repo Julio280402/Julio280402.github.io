@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de Galería</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        /* Estilos básicos para la prueba */
+        body { font-family: sans-serif; padding: 2em; }
+        .champion-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 2em;
+            overflow: hidden;
+            max-width: 400px;
+        }
+        .champion-header {
+            padding: 1em;
+            text-align: center;
+            background-color: #f7f7f7;
+        }
+        .accordion-trigger {
+            max-width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            border: 1px solid #eee;
+        }
+        .champion-gallery-content {
+            display: none; /* Contenido oculto por defecto */
+            padding: 1em;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Página de Prueba</h1>
+    <p>Haz clic en la imagen de abajo para ver si se despliega el contenido.</p>
+
+    <div class="champion-item">
+        <div class="champion-header">
+            <img src="images/campeones/campeon_2020.jpg" alt="Foto Principal" class="accordion-trigger">
+            <h3>Campeonato 2024</h3>
+            <h4>Nombre del Equipo Campeón</h4>
+        </div>
+        <div class="champion-gallery-content">
+            <p>Si ves este texto, ¡el despliegue FUNCIONA!</p>
+            <img src="images/campeones/campeon_2021.jpg" alt="Foto 2" style="width:100px;">
+            <img src="images/campeones/campeon_2022.jpg" alt="Foto 3" style="width:100px;">
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            console.log("Documento listo. jQuery está funcionando.");
+            
+            $('.accordion-trigger').on('click', function() {
+                console.log("¡Clic detectado en la imagen!");
+                $(this).closest('.champion-item').find('.champion-gallery-content').slideToggle('fast');
+            });
+        });
+    </script>
+
+</body>
+</html>
