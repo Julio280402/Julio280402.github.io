@@ -5057,7 +5057,7 @@ input, select, textarea {
     }
 
     /* Ajustamos el tamaño de cada miniatura */
-    .thumbnail {
+    .thumbnail-container .thumbnail {
     flex: 1;        /* AÑADIDO: Cada miniatura ocupa el mismo espacio flexible */
     height: 70px;   /* REDUCIDO: Una altura un poco menor para mejorar la proporción */
     }
