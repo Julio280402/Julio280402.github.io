@@ -5058,8 +5058,8 @@ input, select, textarea {
 
     /* Ajustamos el tamaño de cada miniatura */
     .thumbnail-container .thumbnail {
-    flex: 1 !important;           /* Forza a que la imagen sea flexible */
-    width: auto !important;      /* Anula cualquier ancho fijo del estilo de escritorio */
-    height: 70px !important;     /* Asegura la altura */
+    width: 23% !important;      /* FORZAMOS el ancho a un porcentaje pequeño */
+    height: auto !important;     /* Dejamos que la altura se ajuste sola para no deformar la imagen */
+    flex: none !important;       /* Anulamos cualquier otro comportamiento 'flex' conflictivo */
     }
 }
