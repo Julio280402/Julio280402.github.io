@@ -5033,3 +5033,31 @@ input, select, textarea {
 .champion-team-name {
     color: #2e8b57;
 }
+
+/* --- Estilos para la Vista Móvil de la Galería de Ediciones ateriores (Recuerdos) --- */
+
+/* Esta regla se aplica a pantallas de 768px o menos (tablets y celulares) */
+@media (max-width: 768px) {
+
+    /* Cambiamos la galería de 2 columnas a 1 sola */
+    .champion-hover-gallery {
+        flex-direction: column; /* Apila la imagen grande y las miniaturas */
+    }
+
+    /* Ajustamos la altura de la imagen principal para que no se recorte */
+    .main-photo-display {
+        height: auto; /* La altura se ajustará automáticamente al ancho */
+        max-height: 300px; /* Ponemos una altura máxima para que no sea gigante */
+    }
+
+    /* Hacemos que las miniaturas se muestren en una fila horizontal */
+    .thumbnail-container {
+        flex-direction: row; /* Pone las miniaturas una al lado de la otra */
+    }
+
+    /* Ajustamos el tamaño de cada miniatura */
+    .thumbnail {
+        /* La altura ahora se calcula basada en un ancho fijo de 4 miniaturas */
+        height: 80px; 
+    }
+}
