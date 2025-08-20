@@ -5052,17 +5052,13 @@ input, select, textarea {
 
     /* Hacemos que las miniaturas se muestren en una fila horizontal */
     .thumbnail-container {
-    flex-direction: row;       /* Mantiene las miniaturas en una fila */
-    overflow-x: auto;          /* AÑADIDO: Permite el scroll horizontal */
-    flex-wrap: nowrap;         /* AÑADIDO: Evita que las imágenes bajen de línea */
-    -webkit-overflow-scrolling: touch; /* Mejora el scroll en iOS */
-    padding-bottom: 10px;      /* Espacio para la barra de scroll */
+    flex-direction: row; /* Mantiene las miniaturas en una fila */
+    gap: 10px;           /* Asegura un pequeño espacio entre ellas */
     }
 
     /* Ajustamos el tamaño de cada miniatura */
     .thumbnail {
-    height: 80px;
-    width: 100px;           /* AÑADIDO: Ancho fijo para cada miniatura */
-    flex-shrink: 0;         /* AÑADIDO: Evita que las imágenes se encojan */
+    flex: 1;        /* AÑADIDO: Cada miniatura ocupa el mismo espacio flexible */
+    height: 70px;   /* REDUCIDO: Una altura un poco menor para mejorar la proporción */
     }
 }
