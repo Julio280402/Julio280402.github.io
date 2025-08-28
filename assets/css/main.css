@@ -5068,4 +5068,9 @@ input, select, textarea {
     height: auto !important;     /* Dejamos que la altura se ajuste sola para no deformar la imagen */
     flex: none !important;       /* Anulamos cualquier otro comportamiento 'flex' conflictivo */
     }
+
+	/* AÑADIDO: Ajuste para el contenedor principal */
+    #wrapper {
+        padding: 1.5em 1em !important;
+    }
 }
