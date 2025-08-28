@@ -4833,6 +4833,12 @@ input, select, textarea {
     line-height: 1.4;
 }
 
+.match-time {
+    display: block; /* Asegura que se ponga debajo de la cancha */
+    color: #777;
+    font-size: 0.9em;
+    margin-top: 5px; /* Pequeño espacio de separación */
+}
 
 
 /* --- Estilos para la Tabla de Posiciones --- */
