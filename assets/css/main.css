@@ -5069,8 +5069,4 @@ input, select, textarea {
     flex: none !important;       /* Anulamos cualquier otro comportamiento 'flex' conflictivo */
     }
 
-	/* AÑADIDO: Ajuste para el contenedor principal */
-    #wrapper {
-        padding: 1.5em 1em !important;
-    }
 }
