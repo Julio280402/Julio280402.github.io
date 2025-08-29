@@ -5070,3 +5070,34 @@ input, select, textarea {
     }
 
 }
+
+/* --- Estilos para Mapa y Galería de Ubicación --- */
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Proporción 16:9 para el video/mapa */
+    position: relative;
+    height: 0;
+    margin-bottom: 1.5em;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.location-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Crea una cuadrícula de 2x2 */
+    gap: 1em; /* Espacio entre las fotos */
+    margin-top: 1em;
+}
+
+.location-gallery img {
+    width: 100%;
+    border-radius: 5px;
+}
