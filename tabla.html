@@ -1,130 +1,260 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html lang="es"></html>
-	<head>
-		<title>Santa Rosa de Huallyata</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=4, user-scalable=yes" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="es">
+    <head>
+        <title>Tabla de Posiciones - Campeonato Huallyata</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=0.85, user-scalable=yes" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<span class="logo">POSICIONES</span>
-					</header>
+            <header id="header">
+                <span class="logo">POSICIONES</span>
+            </header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="equipos.html">Equipos</a></li>
-							<li><a href="partidos.html">Partidos</a></li>
-							<li class="active"><a href="tabla.html">Posiciones</a></li>
-							<li><a href="bases.html">Bases</a></li>
-							<li><a href="apoyo.html">Apoyo</a></li>
-							<li><a href="ediciones.html">Ediciones Anteriores</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://x.com/JuliCesarFFF" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/Julio.Cesar.F.F.Fantacy" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/julio_dyj_foreve/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/Julio280402" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+            <nav id="nav">
+                <ul class="links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="equipos.html">Equipos</a></li>
+                    <li><a href="partidos.html">Partidos</a></li>
+                    <li class="active"><a href="tabla.html">Posiciones</a></li>
+                    <li><a href="bases.html">Bases</a></li>
+                    <li><a href="apoyo.html">Apoyo</a></li>
+                    <li><a href="ediciones.html">Ediciones Anteriores</a></li>
+                </ul>
+                <ul class="icons">
+                    </ul>
+            </nav>
 
-				<!-- Main de aquí comienza el contenido de la tabla -->
-					<div id="main">
-						<section class="post">
-							<header class="major">
-								<h1>Tabla de Posiciones</h1>
-								<p>Sigue la clasificación general del campeonato. La tabla se actualiza al finalizar cada jornada.</p>
-							</header>
-							
-							<div class="table-wrapper">
-								<table class="standings-table">
-									<thead>
-										<tr>
-											<th>Pos</th>
-											<th></th> <th style="text-align: left;">Equipo</th>
-											<th>PJ</th> <th>PG</th> <th>PE</th> <th>PP</th> <th>GF</th> <th>GC</th> <th>DG</th> <th>Pts</th> </tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>1</td>
-												<td><img src="images/prueba_de_insignia.png" alt="" class="team-logo-table"></td>
-												<td style="text-align: left;">Nombre Equipo A</td>
-													<span>Nombre Equipo A</span>
-												</td>
-												<td>1</td>
-												<td>0</td>
-												<td>0</td>
-												<td>0</td>
-												<td>0</td>
-												<td>0</td>
-												<td>0</td>
-												<td class="points"><strong>0</strong></td>
-											</tr>
-											<tr>
-												<td>2</td>
-												<td><img src="images/prueba_de_insignia.png" alt="" class="team-logo-table"></td>
-													<td style="text-align: left;">Nombre Equipo B</td>
-													<span>Nombre Equipo B</span>
-												</td>
-												<td>0</td>
-												<td>0</td>
-												<td>0</td>
-												<td>0</td>
-												<td>0</td>
-												<td>0</td>
-												<td>0</td>
-												<td class="points"><strong>0</strong></td>
-											</tr>
-										</tbody>
-									</table>
-								</div>
-							</section>
-							
-                        <!-- Main aquí termina el contenido de la tabla -->
+            <div id="main">
+                <section class="post">
+                    <header class="major">
+                        <h1>Tabla de Posiciones</h1>
+                        <p>Sigue la clasificación general del campeonato. La tabla se actualiza al finalizar cada jornada.</p>
+                    </header>
+                    
+                    <div class="table-wrapper">
+                        <table class="standings-table">
+                            <thead>
+                                <tr>
+                                    <th>Pos</th>
+                                    <th></th>
+                                    <th style="text-align: left;">Equipo</th>
+                                    <th>PJ</th>
+                                    <th>PG</th>
+                                    <th>PE</th>
+                                    <th>PP</th>
+                                    <th>GF</th>
+                                    <th>GC</th>
+                                    <th>DG</th>
+                                    <th>Pts</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tabla-posiciones-body">
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="images/prueba_de_insignia.png" alt="" class="team-logo-table"></td>
+                                    <td style="text-align: left;">CLUB DEFENSOR TACNA</td>
+                                    <td>0</td> <!--PJ-->
+                                    <td>0</td> <!--PG-->
+                                    <td>0</td> <!--PE-->
+                                    <td>0</td> <!--PP-->
+                                    <td>0</td> <!--GF-->
+                                    <td>0</td> <!--GC-->
+                                    <td>0</td> <!--DG--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+                                    <td class="points"><strong>0</strong></td> <!--PTS--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+                                </tr>
+                                
+								<tr>
+                                    <td>2</td>
+                                    <td><img src="images/prueba_de_insignia.png" alt="" class="team-logo-table"></td>
+                                    <td style="text-align: left;">REAL SANTA ROSA</td>
+                                    <td>0</td> <!--PJ-->
+                                    <td>0</td> <!--PG-->
+                                    <td>0</td> <!--PE-->
+                                    <td>0</td> <!--PP-->
+                                    <td>0</td> <!--GF-->
+                                    <td>0</td> <!--GC-->
+                                    <td>0</td> <!--DG--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+                                    <td class="points"><strong>0</strong></td> <!--PTS--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+                                </tr>
 
-						</div>
+								<tr>
+									<td>3</td>
+									<td><img src="images/prueba_de_insignia.png" alt="" class="team-logo-table"></td>
+									<td style="text-align: left;">CENTRAL SANTA ROSA</td>
+									<td>0</td> <!--PJ-->
+									<td>0</td> <!--PG-->
+									<td>0</td> <!--PE-->
+									<td>0</td> <!--PP-->
+									<td>0</td> <!--GF-->
+									<td>0</td> <!--GC-->
+									<td>0</td> <!--DG--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+									<td class="points"><strong>0</strong></td> <!--PTS--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+                                </tr>
+    
+								<tr>
+									<td>4</td>
+									<td><img src="images/prueba_de_insignia.png" alt="" class="team-logo-table"></td>
+									<td style="text-align: left;">CLUB DEPORTIVO GENERACION TIPJHANI</td>
+									<td>0</td> <!--PJ-->
+									<td>0</td> <!--PG-->
+									<td>0</td> <!--PE-->
+									<td>0</td> <!--PP-->
+									<td>0</td> <!--GF-->
+									<td>0</td> <!--GC-->
+									<td>0</td> <!--DG--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+									<td class="points"><strong>0</strong></td> <!--PTS--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+								</tr>
+    
+								<tr>
+                                    <td>5</td>
+                                    <td><img src="images/prueba_de_insignia.png" alt="" class="team-logo-table"></td>
+                                    <td style="text-align: left;">UNIÓN CENTRAL SANTA ROSA</td>
+                                    <td>0</td> <!--PJ-->
+                                    <td>0</td> <!--PG-->
+                                    <td>0</td> <!--PE-->
+                                    <td>0</td> <!--PP-->
+                                    <td>0</td> <!--GF-->
+                                    <td>0</td> <!--GC-->
+                                    <td>0</td> <!--DG--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+                                    <td class="points"><strong>0</strong></td> <!--PTS--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+                                </tr>
+    <tr>
+        <td>6</td>
+        <td><img src="images/prueba_de_insignia.png" alt="" class="team-logo-table"></td>
+        <td style="text-align: left;">CLUB ALIANZA ARICA</td>
+        <td>0</td> <!--PJ-->
+        <td>0</td> <!--PG-->
+        <td>0</td> <!--PE-->
+        <td>0</td> <!--PP-->
+        <td>0</td> <!--GF-->
+        <td>0</td> <!--GC-->
+        <td>0</td> <!--DG--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+        <td class="points"><strong>0</strong></td> <!--PTS--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+    </tr>
+    <tr>
+        <td>7</td>
+        <td><img src="images/prueba_de_insignia.png" alt="" class="team-logo-table"></td>
+        <td style="text-align: left;">CLUB DEPORTIVO CULTURAL</td>
+        <td>0</td> <!--PJ-->
+        <td>0</td> <!--PG-->
+        <td>0</td> <!--PE-->
+        <td>0</td> <!--PP-->
+        <td>0</td> <!--GF-->
+        <td>0</td> <!--GC-->
+        <td>0</td> <!--DG--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+        <td class="points"><strong>0</strong></td> <!--PTS--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+    </tr>
+    <tr>
+        <td>8</td>
+        <td><img src="images/prueba_de_insignia.png" alt="" class="team-logo-table"></td>
+        <td style="text-align: left;">JUVENTUD CENTRAL SANTA ROSA</td>
+        <td>0</td> <!--PJ-->
+        <td>0</td> <!--PG-->
+        <td>0</td> <!--PE-->
+        <td>0</td> <!--PP-->
+        <td>0</td> <!--GF-->
+        <td>0</td> <!--GC-->
+        <td>0</td> <!--DG--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+        <td class="points"><strong>0</strong></td> <!--PTS--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+    </tr>
+    <tr>
+        <td>9</td>
+        <td><img src="images/prueba_de_insignia.png" alt="" class="team-logo-table"></td>
+        <td style="text-align: left;">UNIÓN SANTA ROSA</td>
+        <td>0</td> <!--PJ-->
+        <td>0</td> <!--PG-->
+        <td>0</td> <!--PE-->
+        <td>0</td> <!--PP-->
+        <td>0</td> <!--GF-->
+        <td>0</td> <!--GC-->
+        <td>0</td> <!--DG--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+        <td class="points"><strong>0</strong></td> <!--PTS--> <!--NO TOCAR ESTA LINEA ES AUTOMATICA-->
+    </tr>
 
-						<div id="copyright">
-								<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-						</div>
+                                </tbody>
+                        </table>
+                    </div>
+                </section>
+                
+                <div id="copyright">
+                    <ul><li>&copy; Campeonato Huallyata 2025</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+                </div>
+            </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        </div>
 
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        
 		<script>
-    // Este código busca todos los logos de los equipos
-    const teamLogos = document.querySelectorAll('.team-logo');
+        window.addEventListener('load', function() {
+        // Seleccionamos el cuerpo de la tabla
+        var tbody = document.getElementById('tabla-posiciones-body');
+        if (!tbody) return;
 
-    // Añade un "escuchador" de clics a cada logo
-    teamLogos.forEach(logo => {
-        logo.addEventListener('click', () => {
-            // Busca la lista de jugadores que corresponde a ESE equipo
-            const playerList = logo.closest('.team-card').querySelector('.player-list');
+        // Obtenemos todas las filas de la tabla
+        var rows = Array.from(tbody.querySelectorAll('tr'));
+
+        // ==================================================
+        // NUEVA SECCIÓN: Bucle para calcular los datos
+        // ==================================================
+        rows.forEach(function(row) {
+            // Leemos los datos que tú ingresas (celdas 4, 5, 7, 8)
+            var pg = parseInt(row.cells[4].textContent) || 0; // Partidos Ganados
+            var pe = parseInt(row.cells[5].textContent) || 0; // Partidos Empatados
+            var gf = parseInt(row.cells[7].textContent) || 0; // Goles a Favor
+            var gc = parseInt(row.cells[8].textContent) || 0; // Goles en Contra
+
+            // Calculamos los nuevos valores
+            var dg = gf - gc;
+            var pts = (pg * 3) + pe;
+
+            // Escribimos los valores calculados en las celdas correspondientes
+            row.cells[9].textContent = dg; // Escribe la Diferencia de Goles en la celda 10
+            row.cells[10].innerHTML = '<strong>' + pts + '</strong>'; // Escribe los Puntos en la celda 11
+        });
+
+        // ==================================================
+        // SECCIÓN ANTIGUA: Bucle para ordenar las filas
+        // (Ahora usará los datos que acabamos de calcular)
+        // ==================================================
+        rows.sort(function(a, b) {
+            // Obtenemos los Puntos (Pts) de cada fila
+            var pointsA = parseInt(a.cells[10].textContent);
+            var pointsB = parseInt(b.cells[10].textContent);
             
-            // Alterna la clase 'visible' para mostrar u ocultar la lista
-            playerList.classList.toggle('visible');
+            // Obtenemos la Diferencia de Goles (DG)
+            var dgA = parseInt(a.cells[9].textContent);
+            var dgB = parseInt(b.cells[9].textContent);
+
+            // 1. Comparamos por puntos (de mayor a menor)
+            if (pointsB > pointsA) return 1;
+            if (pointsB < pointsA) return -1;
+
+            // 2. Si hay empate, comparamos por diferencia de goles
+            if (dgB > dgA) return 1;
+            if (dgB < dgA) return -1;
+
+            return 0;
+        });
+
+        // Volvemos a añadir las filas a la tabla, ya ordenadas
+        rows.forEach(function(row, index) {
+            row.cells[0].textContent = index + 1; // Actualizamos el número de la posición
+            tbody.appendChild(row);
         });
     });
 </script>
-		
-	</body>
+
+        </body>
 </html>
