@@ -5069,6 +5069,13 @@ input, select, textarea {
     flex: none !important;       /* Anulamos cualquier otro comportamiento 'flex' conflictivo */
     }
 
+
+    /* AÑADIDO: Ajuste para el mapa responsivo en móviles */
+    .map-responsive {
+    height: 300px; /* Le damos una altura fija y razonable en móviles */
+    padding-bottom: 0; /* Anulamos el relleno que calculaba la proporción */
+}
+
 }
 
 /* --- Estilos para Mapa y Galería de Ubicación --- */
