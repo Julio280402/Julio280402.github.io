@@ -5069,32 +5069,29 @@ input, select, textarea {
     flex: none !important;       /* Anulamos cualquier otro comportamiento 'flex' conflictivo */
     }
 
-
-    /* AÑADIDO: Ajuste para el mapa responsivo en móviles */
-    .map-responsive {
-    height: 300px; /* Le damos una altura fija y razonable en móviles */
-    padding-bottom: 0; /* Anulamos el relleno que calculaba la proporción */
 }
 
-}
-
-/* --- Estilos para Mapa y Galería de Ubicación --- */
+/* --- Estilos para Imagen de Mapa y Galería de Ubicación --- */
 
 .map-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%; /* Proporción 16:9 para el video/mapa */
-    position: relative;
-    height: 0;
     margin-bottom: 1.5em;
+    text-align: center; /* Para centrar la imagen si es más pequeña */
 }
 
-.map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
+.map-responsive img {
+    max-width: 100%; /* La imagen no se saldrá del contenedor */
+    height: auto;
     border-radius: 5px;
+    display: block; /* Elimina espacio extra debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Ajuste para la imagen del mapa en móviles si la imagen es muy grande */
+@media (max-width: 768px) {
+    .map-responsive img {
+        max-height: 300px; /* Limita la altura de la imagen en móviles */
+        width: auto; /* Permite que el ancho se ajuste proporcionalmente */
+    }
 }
 
 .location-gallery {
